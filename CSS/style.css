@@ -1,0 +1,426 @@
+@charset "UTF-8";
+
+/*CSS document*/
+a {
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: rgb(255, 0, 186);
+  transition: 0.5s;
+  text-shadow: 0px 0px 20px rgb(255, 0, 186);
+}
+
+body {
+  margin: 0
+}
+
+.main {
+  width: 1440px;
+  height:auto;/*Readjust's the height of the page*/
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#00c3ff+0,fc00eb+100 */
+    background: #00c3ff;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #00c3ff 0%, #fc00eb 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #00c3ff 0%, #fc00eb 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #00c3ff 0%, #fc00eb 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00c3ff', endColorstr='#fc00eb', GradientType=0);
+  /* IE6-9 */
+  margin: auto
+}
+
+.header {
+  width: 100%;
+  height: 170px;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+}
+
+.header img {
+  width: 14%;
+  height: auto;
+}
+
+.header h1 {
+  width: 90%;
+  height: 100px;
+  margin: 0;
+  /*h1 is one of the block elements. It creates a default gap*/
+  font-family: 'Turret Road', cursive; sans-serif;
+  font-size: 100px;
+  color: rgb(255, 0, 186);
+  text-shadow: 5px 0px 25px rgb(255, 0, 186);
+  /*Text properities*/
+  transition: 0.5s;
+  /*To center the heading text*/
+  padding-top: 30px;
+}
+
+.header h1:hover {
+  text-shadow: 0px 0px 80px rgb(255, 0, 186);
+  transition: 0.5s;
+}
+
+/*Change of colour when mouse is hovering*/
+.menu {
+  width: 100%;
+  height: 70px;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;align-items: center;/*To centre its inner boxes*/
+  /*Inner boxes will sit in the line*/
+}
+.toggleicon{
+  display: flex;
+  font-size: 40px;
+  color: rgb(0, 225, 255); /*Turn on the hamburger icon*/
+padding-top: 5px;}
+
+.search-box {
+  left: 70px;
+  top: 50%;
+  height: 20px;
+  border-radius: 60px;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-btn {
+  color: rgb(0, 255, 255);
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  float: left;
+  padding: 0;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  transition: 2.4s;
+}
+
+.button {
+  width: 15%;
+  height: 70px;
+  /*Button properities*/
+  font-family: 'Turret Road', cursive;
+  font-size: 30px;
+  color: rgb(0, 255, 255);
+  text-shadow: 0px 0px 20px #00ffff;
+  /*Text properities */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*Text Alignment*/
+}
+
+.button:hover {
+  background: rgb(20, 20, 20);
+}
+
+.hero {
+  width: 100%;
+  height: 540px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /*A parent box*/
+}
+
+.hero h1 {
+  width: 40%;
+  height: 100px;
+  background-color: rgba(45, 45, 45, 0.7);
+  position: absolute;
+  /*A child box*/
+  margin: 0;
+  font-family: 'Turret Road', cursive;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 20px rgb(255, 255, 255);
+  /*Text properities */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*Text Alignment*/
+}
+
+.hero img {
+  width: 100%;
+  height: 520px;
+}
+
+.column-container{
+  width:100%;
+  height:400px;
+  background:rgba(0, 0, 0, 0.3);
+  display:flex; /*To make the inner box sit on the same line*/}
+
+  .column-left{
+    width:33.3%; height:400px; background:rgba(0, 0, 0, 0.3); transition: 0.5s; /*Left column properities*/
+    display:flex; justify-content: center;align-items: center; flex-flow: column;/*To center inner boxes hor. & ver.*/}
+  .column-left h1{
+    width:100%; height:60px; margin:0;/*h1 is one of the block elements. It creates a default gap*/
+    font-family: 'Turret Road', cursive; sans-serif; font-size: 45px; color: rgb(0, 255, 255); text-decoration: underline; text-shadow: 0px 0px 20px rgb(0, 255, 255); /*Text properities*/
+    display: flex; justify-content: center; align-items: center;/*To center the heading text*/}
+  .column-left p{
+    width:100%; height:auto; margin:0; /*paragraph properities*/
+    font-family: 'Saira Condensed', sans-serif; font-size: 17px; color: rgb(255, 255, 255);/*font properities within paragraphs*/
+  padding-left:20px; padding-right: 20px; padding-top: 25px; padding-bottom: 5px; box-sizing: border-box; /*# of pixels around the boxes to create a padding*/}
+  .column-left:hover{
+    background:rgb(20, 20, 20); transition: 0.5s;/*Makes the entire left column change color when mouse is hovering*/}
+
+  .column-middle{
+    width:33.3%;height:400px;background:rgba(0, 0, 0, 0.3); /*Middle column properities*/
+    display:flex; justify-content: center;align-items: center; flex-flow: column; /*To center inner boxes hor & ver*/}
+  .column-middle h1{
+    width:100%; height:60px; margin:0; /*h1 is one of the block elements. It creates a default gap*/
+    font-family: 'Turret Road', cursive; sans-serif; font-size: 50px; color: rgb(255, 0, 186); text-decoration: underline; text-shadow: 0px 0px 20px rgb(255, 0, 186);/*Text properities*/
+    display: flex; justify-content: center; align-items: center;/*To center the heading text*/}
+  .column-middle p{
+    width:100%; height:auto; margin:0; /*paragraph properities*/
+    font-family: 'Saira Condensed', sans-serif; font-size: 17px; color: rgb(255, 255, 255);/*Text properities*/
+  padding-left:20px; padding-right: 20px; padding-top: 32px; padding-bottom: 20px; box-sizing: border-box;/*$ of pixels around the boxes to create a padding*/}
+
+  .column-right{
+    width:33.3%; height:400px; background:rgba(0, 0, 0, 0.3); transition: 0.5s;
+    display:flex; justify-content: center;align-items: center; flex-flow: column;/*To center inner boxes hor. & ver.*/}
+  .column-right h1{
+    width:80%; height:60px; margin:0;/*h1 is one of the block elements. It creates a default gap*/
+    font-family: 'Turret Road', cursive; sans-serif; font-size: 45px; color: rgb(0, 255, 255); text-decoration: underline; text-shadow: 0px 0px 20px rgb(0, 255, 255); /*Text properities*/
+    display: flex; justify-content: center; align-items: center;/*To center the heading text*/}
+    /*Gotta add images of artists */
+  .column-right img{
+    width: 90%; height: 80%;
+    }
+  .column-right:hover{
+    background:rgb(20, 20, 20); transition: 0.5s;}
+
+.slider-column{
+  height: 600px;
+  width: 100%;}
+.slider-show-middle{
+    width: 800px; height: 500px; overflow: hidden; }
+  .middle{
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  display: flex; justify-content: center; align-items: center;}
+  .navigation{
+    position: absolute; top: 1700px; left: 50%; transform: translate(-50%); display: flex;
+}
+  .bar{
+    width: 50px; height: 10px; border: 4px solid #fff; margin: 6px; cursor: pointer; transition: 0.4s;}
+  .bar:hover{
+    background: rgb(0, 255, 171);}
+
+  input[name="r"]{
+    position: absolute;
+    visibility: hidden;}
+  .slides{
+    width: 500%; height: 100%; display: flex;}
+  .slide{
+    width: 20%; transition: 0.6s;}
+  .slide img{
+    width: 100%; height: 100%;}
+  #r1:checked ~ .s1{
+    margin-left: 0;}
+  #r2:checked ~ .s1{
+    margin-left: -20%;}
+  #r3:checked ~ .s1{
+    margin-left: -40%;}
+  #r4:checked ~ .s1{
+    margin-left: -60%;}
+
+.contact {
+  width: 100%;
+  height: 205px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  /*Alings and centers the contact boxes*/
+}
+
+.contact h1 {
+  width: 55%;
+  height: 55px;
+  margin: 0;
+  /*Heading box properities*/
+  font-family: 'Saira Condensed', sans-serif;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  /*text properities*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*Alignment properities*/
+}
+
+.social {
+  width: 60%;
+  height: 80px;
+  /*Box properities*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Alignment properities*/
+.icon {
+  width: 10%;
+  height: 45px;
+}
+
+/*Icon box properities*/
+.icon i {
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  padding-top: 3px;
+  /*Icon properities*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*Centers the icons*/
+  transition: 0.5s;
+}
+
+.icon i:hover {
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+
+/*Rotates the icons*/
+.footer {
+  width: 100%;
+  height: 85px;
+  display: flex;
+}
+
+.footer-col {
+  width: 100%;
+  height: 85px;
+    background: rgb(0, 0, 0);
+  font-family: 'Turret Road', cursive;
+  font-size: 20px;
+  color: rgb(0, 255, 255);
+  text-shadow: 0px 0px 15px rgb(0, 255, 255);
+  /*Text properities */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Do not delete the general/global rules. These rules will be inherited onto other pages as well as small screens */
+/*Artists page*/
+
+.artists-gallery {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*To center 3 image boxes*/
+  flex-wrap: wrap; /*To allow 12 image boxes to wrap around automatically*/
+  padding-top: 20px;box-sizing: border-box;
+}
+
+.artists-gallery .imagebox {
+  width: 30%; height: 400px;
+    margin-right: 2%; transform: scale(1); transition: 0.5s;
+    position: relative;/*A parent box*/
+  }
+
+.artists-gallery .imagebox:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.artists-gallery .imagebox h1{
+  width: 100%; height: 90px; padding-top: 300px; font-family: 'Saira Condensed', sans-serif;
+  font-size: 40px; font-decoration: bold;
+  color: rgb(0, 225, 255);
+  position: absolute; /*A child box*/ margin: 0;
+  display: flex; justify-content: center;align-items: center; /*To center the text*/
+}
+
+.artists-gallery .imagebox img {
+  width: 100%;
+  height: 380px;
+  transition: 0.5s;
+}
+
+.artists-gallery .imagebox img:hover {
+  height: 700px;
+  box-shadow: 0px 0px 100px rgb(255, 255, 255);
+  transition: 0.5s;
+}
+
+/*All of the rules under this line will override some of the general/global rules above*/
+/*Specificatoins - Tablet Portrait & Mobile Landscape*/
+@media screen and (max-width:768px) {
+  .main{width:101%}
+  .toggleicon{display: none;}
+  .header{height: 100px;}
+  .header h1{width: 90%; height: 50px; font-size: 55px; }
+  .button{font-size: 21px;}
+  .search-box{padding: 10px; margin-top: 15px;}
+  .search-txt {font-size: 13px;}
+  .hero{height: 518px;}
+  .hero h1{height: 80px; font-size: 37px; }
+  .artists-gallery .imagebox {width: 45%;}
+  .contact h1{width: 100%; font-size: 27px;}
+  .footer-col{font-size: 18px;}
+
+}
+/*All of the rules under this line will override some of the general/global rules above*/
+/*For large screens - Any screen sizes that are larger than 1440px (W)*/
+@media screen and (min-width:1440px){
+  .toggleicon{display:none;}/*To turn off the hamburger icon in desktop version*/
+}
+
+/*All of the rules under this line will override some of the general/global rules above*/
+/*Specifications - Tablet Landscape*/
+@media screen and (min-width: 768px) and (max-width:1440px) {
+  .toggleicon{display: none;}
+  .search-box{margin-top: 5px;}
+}
+
+/*All of the rules under this line will override some of the general/global rules above*/
+/*Specifications - Mobile portrait*/
+@media screen and (max-width: 600px) {
+  .main{width: 100%}
+  .header{height: 80px;}
+  .header img {Width: 25%; height: 90%;}
+  .header h1{width: 75%; height: 40px; font-size: 25px;}
+  .menu{height: 50px; flex-flow: row wrap; overflow: hidden; transition: 0.5s;}
+  .dropdown{height: 390px; transition: 0.5s;}
+  .toggleicon{width:100%;display: flex; justify-content: center; align-items: center; font-size: 40px; color: rgb(0, 225, 255); /*Turn on the hamburger icon*/}
+  .button {width: 100%; height: 50px; padding-top: 5px; font-size: 20px;}
+  .search-box {width:40%;height: 15px; border-radius: 40px; padding:10px; margin-bottom: 10px;}
+  .search-btn {width: 15px; height: 15px; border-radius: 30%;}
+  .search-txt {font-size: 12px;}
+  .hero{height:auto}
+  .hero h1{height: 50px; font-size: 20px;}
+  .artists-gallery {height: auto;}
+  .artists-gallery .imagebox {margin: 0px; padding-top:0px; width: 90%; }
+  .contact {height: 100px;}
+  .contact h1 {font-size: 15px;}
+  .social {width: 100%; }
+  .footer {height: 65px;}
+  .footer-col {height: 65px; font-size: 10px;}
+}
